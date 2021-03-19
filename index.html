@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>경태 with 동주 모바일 청첩장</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="경태&동주 결혼식 모바일 청첩장" />
+    <meta name="keywords" content="경태&동주 결혼식 오는방법, 청첩장, 모바일">
+    <meta name="author" content="NoskaSpace" />
+
+    <!-- Facebook related metatags -->
+    <meta property="fb:app_id" content="">
+    <meta property="og:url" content="https://NoskaSpace.github.io/gettingmarried/">
+    <meta property="og:title" content="경태 & 동주. 저희 결혼합니다.">
+    <meta property="og:image" content="https://NoskaSpace.github.io/gettingmarried/cs_meta.png">
+    <meta property="og:description" content="경태&동주 결혼식 모바일 청첩장">
+    <meta property="og:site_name" content="NoskaSpace">
+    <meta property="og:type" content="website">
+
+    <!-- 카카오맵 및 부트스트랩 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=93b874a61720ffa5b509738df414fc59"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="noto-serif">
+    <div>
+        <img src="CS.png" alt="" class="img-fluid">
+    </div>
+
+
+    <h1 class="">찾아오시는 길</h1>
+    <div id="map" class="map"></div>
+
+
+
+    <h2 class="bold">카카오맵 길찾기</h2>
+    <div class="container">
+
+
+        <div class="link-group ">
+            <a class="btn btn-lg btn-block btn-dark" target="_blank"
+               href="*" onclick="navi();">웨스턴베니비스 길안내 <span>* 카카오내비 길찾기</span></a>
+                <a class="btn btn-lg btn-block btn-dark" target="_blank"
+                href="https://map.kakao.com/link/to/18887815">웨스턴베니비스 길안내 <span>* 카카오맵 길찾기</span></a>
+        </div>
+    </div>
+
+    <h2 class="bold">당부의 말씀</h2>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <p>지하1층 올리브영 옆 센터포인트 엘리베이터를 이용하시면 바로 올라오실 수 있습니다. </p>
+        <p>가급적이면 대중교통을 이용하시길 바랍니다.</p>
+        <!-- </div> -->
+    </div>
+
+    <br/>
+
+    <h2 class="bold">마음 전하실 곳</h2>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <p>코로나로 인해 부득이하게 계좌번호를 기재하게 되어 </p>
+        <p>대단히 죄송하게 생각하고 있습니다. </p>
+        <p>어려운 시기에 축복해 주셔서 감사드리며 늘 건강하시길 바랍니다. </p>
+        <br/>
+        <p>신랑 : 카카오뱅크 3333-01-1192520 김경태 </p>
+        <p>신부 : 농협 356-0319-6639-53 고영준 </p>
+        <!-- </div> -->
+    </div>
+
+
+
+    <!-- 타입킷, 본명조 및 본고딕 -->
+    <script src="https://use.typekit.net/egf1zao.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <!-- 부트스트랩 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+    </script>
+
+    <!-- 카카오맵 옵션 -->
+    <script>
+        Kakao.init('93b874a61720ffa5b509738df414fc59');
+        var HOME_PATH = window.HOME_PATH || '.';
+
+        var weddingHall = new kakao.maps.LatLng(37.507000, 126.890200),
+            map = new kakao.maps.Map(document.getElementById('map'), {
+                center: weddingHall,
+                zoom: 10
+            }),
+            marker = new kakao.maps.Marker({
+                map: map,
+                position: weddingHall
+            });
+
+        var contentString = [
+            '<div class="iw_inner">',
+            '   <h3>웨스턴베니비스</h3>',
+            '   <p>서울 구로구 새말로 97<br /> 신도림 테크노마트 7층<br />',
+            '   </p>',
+            '</div>'
+        ].join('');
+
+        var infowindow = new kakao.maps.InfoWindow({
+            map: map,
+            content: contentString,
+            position: weddingHall
+        });
+
+        function navi() {
+            Kakao.Navi.start({
+                name: '신도림 웨스턴베니비스',
+                x: 126.890200,
+                y: 37.507000,
+                coordType: 'wgs84'
+            })
+        }
+    </script>
+</body>
+
+</html>
