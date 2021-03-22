@@ -77,3 +77,83 @@ ul {
     padding: 0 5px;
     margin-bottom: 40px;
 }
+
+hr.heart-line {
+    border: 0px;
+    border-top: 4px double #8c8b8b;
+    text-align: center;
+    width: 200px;
+}
+
+#intro .intro-person.for-detail {
+    display: table-cell;
+}
+
+#intro {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+#intro .intro-person {
+    display: inline-block;
+    width: 50%;
+}
+
+#intro .intro-person .intro-header {
+    text-align: center;
+}
+
+#intro .intro-person .intro-header .intro-face {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+}
+
+#intro .intro-person .intro-header .intro-name {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+#intro .intro-person .intro-content {
+    font-size: 18px;
+    line-height: 32px;
+
+    text-align: center;
+}
+
+#intro .intro-person .intro-content p {
+    margin: 0;
+
+    display: inline-block;
+    width: 80%;
+
+    text-align: left;
+    text-indent: 18px;
+}
+
+div.parents {
+    margin: 2rem 0;
+}
+
+h3.parents {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+span.parents {
+    font-size: 0.7rem;
+}
+
+h3.location {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h5.location {
+    text-align: center;
+    font-size: 1rem;
+}
