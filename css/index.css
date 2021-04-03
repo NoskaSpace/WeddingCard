@@ -16,14 +16,20 @@ div {
     width: 100%;
     text-align: center;
     background-color: #f8e5aa;
-    font-family: "OTEnjoystoriesBA";
 }
 
-p {
+h2 {
     text-align: center;
     background-color: #f8e5aa;
     font-family: 'OTEnjoystoriesBA';
-    font-size: 1.7rem;
+    font-weight: smaller;
+    margin-top: 5px;
+}
+
+h5 {
+    text-align: center;
+    background-color: #f8e5aa;
+    font-family: 'OTEnjoystoriesBA';
     font-weight: smaller;
     margin-top: 5px;
 }
