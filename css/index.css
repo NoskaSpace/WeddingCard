@@ -7,16 +7,25 @@
     font-style: normal;
 }
 
-.donation{
-    font-family: "OTEnjoystoriesBA";
-    font-size: 1.5rem;
-    padding:0 10px;
-    font-weight:lighter;
-  }
+img {
+    display: block; 
+    margin: 0px auto;
+}
 
-section {
+div {
     width: 100%;
     text-align: center;
+    background-color: #f8e5aa;
+    font-family: "OTEnjoystoriesBA";
+}
+
+p {
+    text-align: center;
+    background-color: #f8e5aa;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 1.7rem;
+    font-weight: smaller;
+    margin-top: 5px;
 }
 
 .btn {
