@@ -33,17 +33,16 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="noto-serif">
-    <div>
-        <div>
-            <img src="images/title.jpg" alt="" class="img-fluid">
-            <img src="images/parents.jpg" alt="" class="img-fluid">
-            <br />
-            <div class="dday">
-                <img src="images/calender.jpg" alt="" class="img-fluid">
-            </div>
-            <img src="images/label_gallery.jpg" alt="" class="img-fluid">
-        </div>
+<body>
+    <div style="background-color: #f8e5aa">
+        <img src="images/title.jpg" alt="" class="img-responsive">
+        <br />
+        <img src="images/text_parents.jpg" alt="" class="img-responsive">
+        <br />
+        <img src="images/calender.jpg" alt="" class="img-responsive">
+        <br />
+        <img src="images/label_gallery.jpg" alt="" class="img-responsive">
+        <br />
         <div id="carouselImageSlide" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselImageIndicators" data-slide-to="1" class="active"></li>
@@ -99,29 +98,24 @@
                 "mapHeight": "360"
             }).render();
         </script>
-        <div class="link" style="background-color: #f8e5aa">
-            <div class="link-group" style="background-color: #f8e5aa">
-                <a class="btn btn-lg btn-block btn-dark" target="_blank"
-                    href="https://map.kakao.com/link/to/18887815">카카오맵
-                    길찾기</a>
-                <a class="btn btn-lg btn-block btn-dark" target="_blank" href="*" onclick="navi();">카카오내비 길찾기
-                    <span>* 모바일에서만 지원됩니다.</span></a>
-            </div>
-            <img src="images/label_attention.jpg" alt="" class="img-fluid">
-            <br />
-            <img src="images/text_attention.jpg" alt="" class="img-fluid">
-            <br />
-            <img src="images/label_donation.jpg" alt="" class="img-fluid">
-            <br />
-            <img src="images/text_donation.jpg" alt="" class="img-fluid">
-            <br />
+        <div class="link-group" style="background-color: #f8e5aa">
+            <a class="btn btn-lg btn-block btn-dark" target="_blank" href="https://map.kakao.com/link/to/18887815">카카오맵
+                길찾기</a>
+            <a class="btn btn-lg btn-block btn-dark" target="_blank" href="*" onclick="navi();">카카오내비 길찾기
+                <span>* 모바일에서만 지원됩니다.</span></a>
         </div>
-        <div class="donation" style="background-color: #f8e5aa">
-            <!-- <div class="row"> -->
-            <p>신랑 : 신한 110-026-621892 김종현 </p>
-            <p>신부 : 농협 356-0319-6639-53 고영준 </p>
-            <!-- </div> -->
-        </div>
+        <img src="images/label_attention.jpg" alt="" class="img-fluid">
+        <br />
+        <img src="images/text_attention.jpg" alt="" class="img-fluid">
+        <br />
+        <img src="images/label_donation.jpg" alt="" class="img-fluid">
+        <br />
+        <img src="images/text_donation.jpg" alt="" class="img-fluid">
+        <br />
+        <img src="images/text_account_groom.jpg" alt="" class="img-fluid" onclick="copyToClipboard('110026621892')">
+        <br />
+        <img src="images/text_account_bride.jpg" alt="" class="img-fluid" onclick="copyToClipboard('3560319663953')">
+        <h3 class="donation">( 계좌번호를 클릭하시면 복사됩니다. )</h3>
     </div>
 
     <!-- 부트스트랩 스크립트 -->
@@ -146,6 +140,16 @@
                 y: 37.507000,
                 coordType: 'wgs84'
             })
+        }
+
+        function copyToClipboard(val) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = val;
+            dummy.select();
+            document.execCommand("copy");
+            alert(`${val} 계좌번호가 복사되었습니다.`);
+            document.body.removeChild(dummy);
         }
     </script>
 </body>
