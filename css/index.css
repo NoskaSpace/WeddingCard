@@ -13,9 +13,9 @@ img {
 }
 
 div {
-    width: 100%;
     text-align: center;
     background-color: #f8e5aa;
+    margin:0 auto;
 }
 
 h2 {
@@ -32,6 +32,12 @@ h5 {
     font-family: 'OTEnjoystoriesBA';
     font-weight: smaller;
     margin-top: 5px;
+}
+
+.maps div {
+    position: relative;
+    text-align: center;
+    margin:0 auto;
 }
 
 .btn {

@@ -78,9 +78,10 @@
             </a>
         </div>
         <img src="images/label_location.jpg" alt="" class="img-fluid">
-        <!-- * 카카오맵 - 지도퍼가기 -->
-        <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1617426525227" style="width: 100%" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <div class="maps">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1617460913327" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
             <!--
 	2. 설치 스크립트
@@ -92,16 +93,12 @@
             <!-- 3. 실행 스크립트 -->
             <script charset="UTF-8">
                 new daum.roughmap.Lander({
-                    "timestamp": "1617426525227",
-                    "key": "256nj",
-                    "mapHeight": "360"
+                    "timestamp": "1617460913327",
+                    "key": "256pd",
+                    "mapWidth": "360",
+                    "mapHeight": "250"
                 }).render();
             </script>
-        <div class="link-group" style="background-color: #f8e5aa">
-            <a class="btn btn-lg btn-block btn-dark" target="_blank" href="https://map.kakao.com/link/to/18887815">카카오맵
-                길찾기</a>
-            <a class="btn btn-lg btn-block btn-dark" target="_blank" href="*" onclick="navi();">카카오내비 길찾기
-                <span>* 모바일에서만 지원됩니다.</span></a>
         </div>
         <img src="images/label_attention.jpg" alt="" class="img-fluid">
         <br />
