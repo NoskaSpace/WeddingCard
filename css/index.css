@@ -26,10 +26,11 @@ h2 {
     margin-top: 5px;
 }
 
-h5 {
+p {
     text-align: center;
     background-color: #f8e5aa;
     font-family: 'OTEnjoystoriesBA';
+    font-size: 10px;
     font-weight: smaller;
     margin-top: 5px;
 }
