@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>경태 with 동주 모바일 청첩장</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="경태&동주 결혼식 모바일 청첩장" />
+    <meta name="keywords" content="경태&동주 결혼식 오는방법, 청첩장, 모바일">
+    <meta name="author" content="NoskaSpace" />
+
+    <!-- Facebook related metatags -->
+    <meta property="fb:app_id" content="">
+    <meta property="og:url" content="https://noskaspace.github.io/WeddingCard/Parents">
+    <meta property="og:title" content="경태 & 동주 저희 결혼합니다.">
+    <meta property="og:image" content="https://noskaspace.github.io/WeddingCard/cs_meta.jpg">
+    <meta property="og:description" content="경태&동주 결혼식 모바일 청첩장">
+    <meta property="og:site_name" content="NoskaSpace">
+    <meta property="og:type" content="website">
+
+    <!-- 카카오맵 및 부트스트랩 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=93b874a61720ffa5b509738df414fc59">
+    </script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="noto-serif">
+    <div>
+        <div class="ww-home-page" id="home">
+            <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
+                <div class="container ww-announcement-container">
+                    <p class="ww-couple-name ww-title" style="font-size:4.0em">KyungTae & DongJu</p>
+                    <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
+                        | WE ARE GETTING MARRIED |
+                    </p>
+                    <p class="h2 mt-5 ww-title"
+                       style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
+                        <b style="font-size:1.4em;">2021. 05. 29. SAT PM 01:40</b>
+                        <br>신도림 웨스턴베니비스 7층 아스타홀
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <hr class="heart-line">
+        <div class="container">
+            <div class="parents">
+                <h3 class="parents">
+                    김종현 𐤟 홍원희 <span class="parents">의 차남</span>
+                    경태
+                </h3>
+                <h3 class="parents">
+                    고영준 𐤟 백정해 <span class="parents">의 차녀</span>
+                    동주
+                </h3>
+            </div>
+        </div>
+        <hr class="heart-line">
+    </div>
+    <br />
+    <br />
+
+    <h2 class="bold">사진 갤러리</h2>
+    <div id="carouselImageSlide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselImageIndicators" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselImageIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselImageIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselImageIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselImageIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/album/1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/album/2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/album/3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/album/4.jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/album/5.jpg" alt="Fifth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselImageSlide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselImageSlide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br/>
+    <br/>
+
+    <h2 class="bold">찾아오시는 길</h2>
+    <div class="maps">
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1617460913327" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+2. 설치 스크립트
+* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp": "1617460913327",
+                "key": "256pd",
+                "mapWidth": "360",
+                "mapHeight": "250"
+            }).render();
+        </script>
+        <br/>
+        <img src="images/location.jpg" alt="" class="img-fluid">
+    </div>
+    <br/>
+    <h2 class="bold">당부의 말씀</h2>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <p>신도림 테크노마트 지하1층 올리브영 옆 </p>
+        <p>센터포인트 엘리베이터를 이용하시면</p>
+        <p>웨딩홀과 연결되어 편리합니다. </p>
+        <p>가급적 대중교통을 이용하시길 바랍니다.</p>
+        <!-- </div> -->
+    </div>
+
+    <br />
+
+    <h2 class="bold">마음 전하실 곳</h2>
+    <div class="container">
+        <!-- <div class="row"> -->
+        <p>코로나로 인해 부득이하게 </p>
+        <p>계좌번호를 기재하게 되어 </p>
+        <p>대단히 죄송하게 생각하고 있습니다. </p>
+        <p>어려운 시기에 축복해 주셔서 감사드리며</p>
+        <p>늘 건강하시길 바랍니다. </p>
+        <br />
+        <p>신랑 : 신한 110-026-621892 김종현 </p>
+        <p>신부 : 농협 356-0319-6639-53 고영준 </p>
+        <!-- </div> -->
+    </div>
+
+
+
+    <!-- 타입킷, 본명조 및 본고딕 -->
+    <script src="https://use.typekit.net/egf1zao.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <!-- 부트스트랩 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+    </script>
+
+    <!-- 카카오맵 옵션 -->
+    <script>
+        Kakao.init('93b874a61720ffa5b509738df414fc59');
+        var HOME_PATH = window.HOME_PATH || '.';
+
+        var weddingHall = new kakao.maps.LatLng(37.507000, 126.890200),
+            map = new kakao.maps.Map(document.getElementById('map'), {
+                center: weddingHall,
+                zoom: 10
+            }),
+            marker = new kakao.maps.Marker({
+                map: map,
+                position: weddingHall
+            });
+
+        var contentString = [
+            '<div class="iw_inner">',
+            '   <h3>웨스턴베니비스</h3>',
+            '   <p>서울 구로구 새말로 97<br /> 신도림 테크노마트 7층<br />',
+            '   </p>',
+            '</div>'
+        ].join('');
+
+        var infowindow = new kakao.maps.InfoWindow({
+            map: map,
+            content: contentString,
+            position: weddingHall
+        });
+
+        function navi() {
+            Kakao.Navi.start({
+                name: '신도림 웨스턴베니비스',
+                x: 126.890200,
+                y: 37.507000,
+                coordType: 'wgs84'
+            })
+        }
+    </script>
+</body>
+
+</html>
