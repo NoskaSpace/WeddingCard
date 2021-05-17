@@ -69,12 +69,11 @@
         </div>
         <hr class="heart-line">
         <br/>
-        <p>본식 당일 모바일 청첩장을 통해 </p>
-        <p>유튜브 생중계 링크가 추가될 예정입니다.</p>
+        <p>* 본식 당일 생중계가 진행될 예정입니다. *</p>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/GC6Y8AwxFmY" frameborder="0" allowfullscreen=""></iframe>
+        <br/>
     </div>
-    <br />
-    <br />
-
+    <br/>
     <h2 class="bold">사진 갤러리</h2>
     <div id="carouselImageSlide" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -224,6 +223,25 @@
                 y: 37.507000,
                 coordType: 'wgs84'
             })
+        }
+    </script>
+
+    <!-- 유튜브 생중계 -->
+    <script type="text/javascript">
+        $(window).resize(function () {
+            resizeYoutube();
+        });
+        $(function () {
+            resizeYoutube();
+        });
+
+        function resizeYoutube() {
+            $("iframe").each(function () {
+                if (/^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src"))) {
+                    $(this).css("width", "90%");
+                    $(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
+                }
+            });
         }
     </script>
 </body>

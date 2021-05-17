@@ -37,6 +37,7 @@
     <div>
         <img src="images/title.jpg" alt="" class="img-fluid">
         <br />
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/GC6Y8AwxFmY" frameborder="0" allowfullscreen=""></iframe>
         <img src="images/text_parents.jpg" alt="" class="img-fluid">
         <br />
         <img src="images/calender.jpg" alt="" class="img-fluid">
@@ -154,6 +155,26 @@
             document.body.removeChild(dummy);
         }
     </script>
+
+    <!-- 유튜브 생중계 -->
+    <script type="text/javascript">
+        $(window).resize(function () {
+            resizeYoutube();
+        });
+        $(function () {
+            resizeYoutube();
+        });
+
+        function resizeYoutube() {
+            $("iframe").each(function () {
+                if (/^https?:\/\/www.youtube.com\/embed\//g.test($(this).attr("src"))) {
+                    $(this).css("width", "90%");
+                    $(this).css("height", Math.ceil(parseInt($(this).css("width")) * 480 / 854) + "px");
+                }
+            });
+        }
+    </script>
+
 </body>
 
 </html>
